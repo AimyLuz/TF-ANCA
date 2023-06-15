@@ -1,0 +1,60 @@
+/* PÁGINA CONTACTO */
+main {
+  .formulario {
+    background-color: $color-secundario;
+    border: #ffffff solid 2px;
+    ::placeholder {
+      color: $color-texto-secundario;
+    }
+
+    label {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      color: $color-texto-secundario;
+    }
+    textarea,
+    input {
+      background-color: $color-fondo;
+      &:focus {
+        background-color: $color-fondo;
+        color: $color-texto-secundario;
+      }
+    }
+    .btn {
+      background-color: $color-fondo;
+      border-radius: 5.6rem;
+      border-color: $color-fondo;
+      text-align: center;
+      color: $color-texto-principal;
+      @include font ("Gotu", normal, 400, 2.5rem, 0 );
+      margin-top: 3rem;
+      width: 200px;
+      height: 43px;
+      padding: 2rem;
+      margin: 2rem;
+      &:hover {
+        color: $color-fondo;
+        background-color: $color-texto-principal;
+      }
+    }
+
+    @media screen and (max-width: 764px) {
+      .btn {
+        width: 130px;
+        height: 20px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .fotos {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    img {
+      width: 100%;
+    }
+    .tirroma2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+
+
+/* 
+Variables 
+Modo original:
+$color-fondo: rgb(0, 0, 0);
+$color-texto-principal:#efd065;
+$color-secundario:#6e0b0b;
+$color-texto-secundario:#ffffff;
+*/
+$color-fondo: rgb(0, 0, 0);
+$color-texto-principal: #efd065;
+$color-secundario: #6e0b0b;
+$color-texto-secundario: #ffffff; // texto imput, fondo cards, texto de la pagina para leer, etc.
+
+@mixin font($ffamily, $fstyle, $fweight, $fsize, $lheigh) {
+    font-family: $ffamily ;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lheigh ;
+}
+
+@mixin font-styles {
+  font-family: "Germania One";
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Gotu", sans-serif;
+}

@@ -1,0 +1,468 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Gothic+A1:wght@700 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+/* 
+Variables 
+Modo original:
+$color-fondo: rgb(0, 0, 0);
+$color-texto-principal:#efd065;
+$color-secundario:#6e0b0b;
+$color-texto-secundario:#ffffff;
+*/
+* {
+  font-family: "Germania One";
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Gotu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Germania One";
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Gotu", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+body header {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+body header .navegador {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+body header .navegador .logo_banda {
+  height: 80px;
+}
+body header .navegador nav ul {
+  background-color: rgb(0, 0, 0);
+  margin-right: 30px;
+}
+body header .navegador nav ul li {
+  margin: 5px;
+}
+body header .navegador nav ul li a {
+  text-decoration: none;
+  justify-content: center;
+  padding: 7px 10px;
+}
+body header .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn {
+  background-color: #6e0b0b;
+  border-radius: 5.6rem;
+  border-color: #6e0b0b;
+  text-align: center;
+  color: #efd065;
+  font-family: "Gotu";
+  font-style: normal;
+  font-weight: 400;
+  width: 110px;
+  margin: 10px;
+}
+body header .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn:hover {
+  background-color: #efd065;
+  color: #6e0b0b;
+}
+body main {
+  margin: 0;
+  padding: 0;
+}
+body main .titulo {
+  padding: 1rem;
+  margin: 1rem;
+  width: 296px;
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 7rem;
+  color: #efd065;
+}
+body main .section4 .tirroma2 {
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7rem;
+  line-height: 8rem;
+  color: #6e0b0b;
+  display: flex;
+  justify-content: center;
+  margin: 5px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;
+}
+@media screen and (max-width: 764px) {
+  body main .section4 .tirroma2 {
+    font-size: 3rem;
+  }
+}
+body footer {
+  background-color: rgba(172, 170, 175, 0.5);
+  padding: 10px 10px 0 10px;
+  margin: 0;
+}
+body footer .creditos {
+  display: flex;
+  justify-content: start;
+}
+body footer .redes {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 764px) {
+  body footer .creditos {
+    justify-content: center;
+  }
+  body footer .redes {
+    justify-content: center;
+  }
+}
+
+/* INDEX */
+body .floating-image {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  z-index: 9999;
+}
+body .floating-image img {
+  width: 200px;
+}
+@media screen and (max-width: 764px) {
+  body .floating-image {
+    display: none;
+  }
+}
+body main .section1 #imgen_principal {
+  opacity: 0.5;
+}
+body main .section2 .article1 .escuchanos {
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #efd065;
+  padding: 0 2rem 1rem 2rem;
+  margin: 0 2rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+body main .section2 .article1 .container_spotify {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+body main .section2 .article2 {
+  margin: 30px;
+  padding: 30px;
+}
+body main .section2 .article2 .fechas__titulo {
+  display: flex;
+  justify-content: center;
+}
+body main .section2 .article2 .fechas__titulo h3 {
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  color: #efd065;
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 2rem 2rem 1rem 2rem;
+}
+body main .section2 .article2 .fechas__p {
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin: 0;
+}
+body main .section2 .article2 .fechas__h4 {
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+body main .section2 .article2 .fechas__lugar {
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0 0.5rem 1rem 0.5rem;
+  margin: 0;
+}
+body main .section2 .article2 .fechas__lugar a {
+  text-decoration: none;
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
+body main .section2 .article2 .fechas__lugar a:hover {
+  color: #efd065;
+}
+body main .section2 .article2 .card_b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 224px;
+  height: 291px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background: #ffffff;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
+  color: #6e0b0b;
+  font-size: 62.5%;
+}
+body main .section2 .article2 .card_b a {
+  color: #6e0b0b;
+}
+body main .section2 .article2 .card_r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 62.5%;
+  width: 224px;
+  height: 291px;
+  background: #6e0b0b;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
+  color: #ffffff;
+  padding: 5px;
+  margin: 5px;
+}
+body main .section2 .article2 .card_r a {
+  color: #ffffff;
+}
+@media screen and (max-width: 764px) {
+  body main .section2 .article2 .fechas .col-lg-3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+body main .section3 .fotos_banda {
+  margin: 30px;
+  padding: 10px;
+}
+
+/* PAGINA HISTORIA */
+#n_piano {
+  width: 20rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#n_banjo {
+  width: 20rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#adol1 {
+  width: 90%;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.historia__texto {
+  color: #ffffff;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 35px;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 764px) {
+  .historia__texto {
+    font-size: 1.1rem;
+  }
+}
+/* DISCOGRAFÍA */
+.grilla table {
+  width: 90%;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 2rem 1rem 1rem 1rem;
+}
+.grilla table,
+.grilla th,
+.grilla td {
+  border: 1px solid #ffffff;
+}
+.grilla th,
+.grilla td {
+  padding: 1rem;
+}
+.grilla .tapas {
+  width: 12rem;
+}
+.grilla .tapas:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 764px) {
+  .grilla .tapas {
+    width: 5rem;
+  }
+  .grilla table {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .grilla th,
+  .grilla td {
+    padding: 0.5rem;
+  }
+}
+
+.calabera {
+  padding: 1rem;
+  margin: 1rem;
+  color: #ffffff;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  align-items: center;
+  text-align: center;
+}
+.calabera h5 {
+  width: 19rem;
+  height: 46px;
+}
+.calabera p {
+  width: 20rem;
+  height: 46px;
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem 2rem;
+}
+.calabera img {
+  border-radius: 60px;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  width: 14rem;
+}
+.calabera img:hover {
+  opacity: 0.8;
+}
+
+/* 
+INTEGRANTES */
+body main .integrantes div div img {
+  width: 80%;
+  border-radius: 100%;
+  padding: 2rem;
+  margin: 2rem;
+}
+body main .integrantes div div img:hover {
+  opacity: 0.8;
+}
+body main .integrantes div div p {
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem 2rem 1.2rem 2rem;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: justify;
+  color: #ffffff;
+}
+body main .integrantes div div p:hover {
+  color: #6e0b0b;
+}
+
+/* PÁGINA CONTACTO */
+main .formulario {
+  background-color: #6e0b0b;
+  border: #ffffff solid 2px;
+}
+main .formulario ::placeholder {
+  color: #ffffff;
+}
+main .formulario label {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+main .formulario textarea,
+main .formulario input {
+  background-color: rgb(0, 0, 0);
+}
+main .formulario textarea:focus,
+main .formulario input:focus {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+main .formulario .btn {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5.6rem;
+  border-color: rgb(0, 0, 0);
+  text-align: center;
+  color: #efd065;
+  font-family: "Gotu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 0;
+  margin-top: 3rem;
+  width: 200px;
+  height: 43px;
+  padding: 2rem;
+  margin: 2rem;
+}
+main .formulario .btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: #efd065;
+}
+@media screen and (max-width: 764px) {
+  main .formulario .btn {
+    width: 130px;
+    height: 20px;
+    font-size: 1.3rem;
+  }
+}
+main .fotos {
+  margin-top: 5rem;
+  padding-top: 1rem;
+}
+main .fotos img {
+  width: 100%;
+}
+main .fotos .tirroma2 {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

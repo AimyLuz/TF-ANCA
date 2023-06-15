@@ -1,0 +1,135 @@
+/* INDEX */
+
+body {
+  .floating-image {
+    position: fixed;
+    bottom: 90px; 
+    right: 30px; 
+    z-index: 9999; 
+    img {
+      width: 200px;
+    }
+  }
+  @media screen and (max-width: 764px) {
+    .floating-image {
+      display: none;
+    }
+  }
+  main {
+    .section1 {
+      #imgen_principal {
+        opacity: 0.5;
+      }
+    }
+    .section2 {
+      .article1 {
+        .escuchanos {
+          @include font ("Germania One", normal, 400, 5rem, 7rem );
+          color: $color-texto-principal;
+          padding: 0 2rem 1rem 2rem;
+          margin: 0 2rem 1rem 2rem;
+          display: flex;
+          justify-content: center;
+        }
+        .container_spotify {
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+      }
+      .article2 {
+        margin: 30px;
+        padding: 30px;
+        .fechas__titulo {
+          display: flex;
+          justify-content: center;
+          h3 {
+            @include font ("Germania One", normal, 400, 64px, 74px );
+            color: $color-texto-principal;
+            padding: 2rem 2rem 1rem 2rem;
+            margin: 2rem 2rem 1rem 2rem;
+          }
+        }
+
+        .fechas__p {
+          @include font ("Gilda Display", normal, 700, 1rem, 2rem );
+          padding: 0.5rem 0.5rem 0 0.5rem;
+          margin: 0;
+        }
+        .fechas__h4 {
+          @include font ("Gilda Display", normal, 700, 1.4rem, 3rem );
+          padding: 0.5rem;
+          margin: 0.5rem;
+        }
+        .fechas__lugar {
+          @include font ("Gilda Display", normal, 700, 1rem, 2rem );
+          padding: 0 0.5rem 1rem 0.5rem;
+          margin: 0;
+          a {
+            text-decoration: none;
+            font-family: "Gilda Display";
+            font-style: normal;
+            font-weight: 700;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            &:hover {
+              color: $color-texto-principal;
+            }
+          }
+        }
+
+        .card_b {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 224px;
+          height: 291px;
+          border: 1px solid $color-texto-secundario;
+          border-radius: 50px;
+          background: $color-texto-secundario;
+          padding: 5px;
+          margin: 5px;
+          box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
+          color: $color-secundario;
+          font-size: 62.5%;
+          a {
+            color: $color-secundario;
+          }
+        }
+
+        .card_r {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 62.5%;
+          width: 224px;
+          height: 291px;
+          background: $color-secundario;
+          border: 1px solid rgb(0, 0, 0);
+          border-radius: 50px;
+          box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
+          color: $color-texto-secundario;
+          padding: 5px;
+          margin: 5px;
+          a {
+            color: $color-texto-secundario;
+          }
+        }
+
+        @media screen and (max-width: 764px) {
+          .fechas .col-lg-3 {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .section3 {
+      .fotos_banda {
+        margin: 30px;
+        padding: 10px;
+      }
+    }
+  }
+}
