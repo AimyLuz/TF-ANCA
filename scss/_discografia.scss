@@ -1,12 +1,14 @@
 
 /* DISCOGRAFÍA */
 .grilla {
+  margin: 20px 0;
+  padding: 7.5px 0;
   table {
     width: 90%;
     @include font ("Gothic A1", normal, 700, 1rem, 3rem );
     text-align: center;
     color: $color-texto-secundario;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     margin: 2rem 1rem 1rem 1rem;
   }
   table,
@@ -47,21 +49,21 @@
 }
 
   .calabera {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     margin: 1rem;
     color: $color-texto-secundario;
-    @include font ("Gothic A1", normal, 700, 22px, 31px );
     align-items: center;
     text-align: center;
     h5 {
-      width: 19rem;
-      height: 46px;
+      @include font ("Gilda Display", normal, 700, 2rem, 4rem );
     }
     p {
       width: 20rem;
       height: 46px;
-      font-size: 2rem;
-      margin: 0.5rem 0 1rem 2rem;
+      @include font ("Gilda Display", normal, 700, 2rem, 4rem );
+
     }
     img {
       border-radius: 60px;

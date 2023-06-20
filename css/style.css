@@ -44,7 +44,6 @@ body header .navegador .logo_banda {
 }
 body header .navegador nav ul {
   background-color: rgb(0, 0, 0);
-  margin-right: 30px;
 }
 body header .navegador nav ul li {
   margin: 5px;
@@ -52,7 +51,7 @@ body header .navegador nav ul li {
 body header .navegador nav ul li a {
   text-decoration: none;
   justify-content: center;
-  padding: 7px 10px;
+  padding: 7px 10px 7px 10px;
 }
 body header .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn {
   background-color: #6e0b0b;
@@ -85,35 +84,51 @@ body main .titulo {
   line-height: 7rem;
   color: #efd065;
 }
-body main .section4 .tirroma2 {
-  font-family: "Germania One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 7rem;
-  line-height: 8rem;
-  color: #6e0b0b;
-  display: flex;
-  justify-content: center;
-  margin: 5px 10px 10px 10px;
-  padding: 5px 10px 10px 10px;
-}
-@media screen and (max-width: 764px) {
-  body main .section4 .tirroma2 {
-    font-size: 3rem;
-  }
-}
 body footer {
-  background-color: rgba(172, 170, 175, 0.5);
-  padding: 10px 10px 0 10px;
-  margin: 0;
+  background-color: rgb(26, 25, 25);
+  padding: 10px 10px 3px 10px;
+  margin: 50px 0 0 0;
 }
 body footer .creditos {
   display: flex;
-  justify-content: start;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+body footer .tirroma2 {
+  font-family: "Germania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  color: #6e0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+@media screen and (max-width: 764px) {
+  body footer .tirroma2 {
+    font-size: 3rem;
+  }
 }
 body footer .redes {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+}
+body footer .redes ul li {
+  margin: 5px;
+}
+body footer .redes ul li a {
+  justify-content: center;
+  padding: 7px 10px;
+}
+body footer .redes ul li a img {
+  height: 50px;
+  width: 50px;
 }
 @media screen and (max-width: 764px) {
   body footer .creditos {
@@ -124,10 +139,18 @@ body footer .redes {
   }
 }
 
+@media screen and (max-width: 764px) {
+  nav ul {
+    background-color: #6e0b0b;
+    border: #6e0b0b;
+    display: flex;
+    align-items: center;
+  }
+}
 /* INDEX */
 body .floating-image {
   position: fixed;
-  bottom: 90px;
+  bottom: 130px;
   right: 30px;
   z-index: 9999;
 }
@@ -139,8 +162,9 @@ body .floating-image img {
     display: none;
   }
 }
-body main .section1 #imgen_principal {
+body main .section1 .imgen_principal {
   opacity: 0.5;
+  width: 100%;
 }
 body main .section2 .article1 .escuchanos {
   font-family: "Germania One";
@@ -170,11 +194,12 @@ body main .section2 .article2 .fechas__titulo h3 {
   font-family: "Germania One";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 4.5rem;
   line-height: 74px;
   color: #efd065;
   padding: 2rem 2rem 1rem 2rem;
   margin: 2rem 2rem 1rem 2rem;
+  text-align: center;
 }
 body main .section2 .article2 .fechas__p {
   font-family: "Gilda Display";
@@ -238,7 +263,6 @@ body main .section2 .article2 .card_r {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 62.5%;
   width: 224px;
   height: 291px;
   background: #6e0b0b;
@@ -246,6 +270,7 @@ body main .section2 .article2 .card_r {
   border-radius: 50px;
   box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
   color: #ffffff;
+  font-size: 62.5%;
   padding: 5px;
   margin: 5px;
 }
@@ -264,19 +289,7 @@ body main .section3 .fotos_banda {
 }
 
 /* PAGINA HISTORIA */
-#n_piano {
-  width: 20rem;
-  padding: 2rem;
-  margin: 2rem;
-}
-
-#n_banjo {
-  width: 20rem;
-  padding: 2rem;
-  margin: 2rem;
-}
-
-#adol1 {
+.historia__imagenes {
   width: 90%;
   padding: 2rem;
   margin: 2rem;
@@ -288,7 +301,7 @@ body main .section3 .fotos_banda {
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 35px;
+  line-height: 3rem;
   padding: 2rem;
   margin: 2rem;
   text-align: justify;
@@ -296,10 +309,14 @@ body main .section3 .fotos_banda {
 
 @media screen and (max-width: 764px) {
   .historia__texto {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 }
 /* DISCOGRAFÍA */
+.grilla {
+  margin: 20px 0;
+  padding: 7.5px 0;
+}
 .grilla table {
   width: 90%;
   font-family: "Gothic A1";
@@ -309,7 +326,7 @@ body main .section3 .fotos_banda {
   line-height: 3rem;
   text-align: center;
   color: #ffffff;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
   margin: 2rem 1rem 1rem 1rem;
 }
 .grilla table,
@@ -346,26 +363,29 @@ body main .section3 .fotos_banda {
 }
 
 .calabera {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   margin: 1rem;
   color: #ffffff;
-  font-family: "Gothic A1";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 31px;
   align-items: center;
   text-align: center;
 }
 .calabera h5 {
-  width: 19rem;
-  height: 46px;
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 .calabera p {
   width: 20rem;
   height: 46px;
+  font-family: "Gilda Display";
+  font-style: normal;
+  font-weight: 700;
   font-size: 2rem;
-  margin: 0.5rem 0 1rem 2rem;
+  line-height: 4rem;
 }
 .calabera img {
   border-radius: 60px;
@@ -379,6 +399,10 @@ body main .section3 .fotos_banda {
 
 /* 
 INTEGRANTES */
+body main .integrantes {
+  padding: 1px 0;
+  margin: 2px 0;
+}
 body main .integrantes div div img {
   width: 80%;
   border-radius: 100%;
@@ -402,9 +426,21 @@ body main .integrantes div div p {
 body main .integrantes div div p:hover {
   color: #6e0b0b;
 }
+@media screen and (max-width: 764px) {
+  body main .integrantes {
+    padding: 10px;
+    margin: 10px;
+  }
+  body main .integrantes div div p {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 
 /* PÁGINA CONTACTO */
 main .formulario {
+  padding: 26.8px;
+  margin: 45px;
   background-color: #6e0b0b;
   border: #ffffff solid 2px;
 }
@@ -434,13 +470,11 @@ main .formulario .btn {
   font-family: "Gotu";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   line-height: 0;
-  margin-top: 3rem;
+  margin: 1rem;
   width: 200px;
-  height: 43px;
-  padding: 2rem;
-  margin: 2rem;
+  height: 80px;
 }
 main .formulario .btn:hover {
   color: rgb(0, 0, 0);
@@ -454,15 +488,17 @@ main .formulario .btn:hover {
   }
 }
 main .fotos {
-  margin-top: 5rem;
-  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 main .fotos img {
-  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
 }
-main .fotos .tirroma2 {
-  margin: 0;
-  padding: 0;
+main .fotos img:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

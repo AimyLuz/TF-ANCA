@@ -1,19 +1,7 @@
 
 /* PAGINA HISTORIA */
 
-#n_piano {
-    width: 20rem;
-    padding: 2rem;
-    margin: 2rem;
-  }
-  
-  #n_banjo {
-    width: 20rem;
-    padding: 2rem;
-    margin: 2rem;
-  }
-  
-  #adol1 {
+.historia__imagenes {
     width: 90%;
     padding: 2rem;
     margin: 2rem;
@@ -21,14 +9,14 @@
   
   .historia__texto {
     color: $color-texto-secundario;
-    @include font ("Gothic A1", normal, 400, 2rem, 35px );
+    @include font ("Gothic A1", normal, 400, 2rem, 3rem);
     padding: 2rem;
     margin: 2rem;
     text-align: justify;
   }
   @media screen and (max-width: 764px) {
     .historia__texto {
-      font-size: 1.1rem;
+      font-size: 1.6rem;
     }
   }
   

@@ -1,6 +1,10 @@
 /* PÁGINA CONTACTO */
+
+
 main {
   .formulario {
+    padding: 26.8px;
+    margin: 45px;
     background-color: $color-secundario;
     border: #ffffff solid 2px;
     ::placeholder {
@@ -26,12 +30,11 @@ main {
       border-color: $color-fondo;
       text-align: center;
       color: $color-texto-principal;
-      @include font ("Gotu", normal, 400, 2.5rem, 0 );
-      margin-top: 3rem;
+      @include font ("Gotu", normal, 400, 1.8rem,0 );
+      margin: 1rem;
       width: 200px;
-      height: 43px;
-      padding: 2rem;
-      margin: 2rem;
+      height: 80px;
+
       &:hover {
         color: $color-fondo;
         background-color: $color-texto-principal;
@@ -47,14 +50,16 @@ main {
     }
   }
   .fotos {
-    margin-top: 5rem;
-    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
     img {
-      width: 100%;
-    }
-    .tirroma2 {
-      margin: 0;
-      padding: 0;
+      padding: 10px;
+      margin: 10px;
+      width: 400px;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

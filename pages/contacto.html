@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="../images/calabera.png" />
   </head>
-  <body class="normal">
+  <body>
     <header>
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
         <div class="container-fluid navegador">
           <a class="navbar-brand" href="#">
@@ -64,61 +63,66 @@
         </div>  
       </div>
     </section>
-    <div class="container">
-      <div class="formulario">
-        <form>
-          <div class="row d-flex justify-content-center">
-            <div class="col-10">
-              <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <form class="formulario">
+            <div class="row d-flex justify-content-center">
+              <div class="col-10">
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                </div>
               </div>
             </div>
-            <div class="col-10">
-              <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+            <div class="row d-flex justify-content-center">
+              <div class="col-10">
+                <div class="form-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-10">
-              <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-2 col-md-12">
+                <button type="submit" class="btn">Enviar</button>
               </div>
             </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-2 col-md-12">
-              <button type="submit" class="btn">Enviar</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>  
-    <section class="fotos section4">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-2 col-sm-0 d-none d-sm-block"><img src="../images/organiser-un-concert-en-7-etapes.jpg" alt="imagen1"></div>
-          <div class="col-lg-2 col-sm-0 d-none d-sm-block"><img src="../images/pexels-josh-sorenson-154147.jpg" alt="imagen2"></div>
-          <div class="col-lg-4 col-sm-12"><p class="tirroma2">TIRROMA</p></div>
-          <div class="col-lg-2 col-sm-0 d-none d-sm-block"><img src="../images/pexels-wendy-wei-1805895.jpg" alt="imagen3"></div>
-          <div class="col-lg-2 col-sm-0 d-none d-sm-block"><img src="../images/pexels-dom-gould-325811.jpg" alt="imagen4"></div>
+          </form>
         </div>
+        <div class="fotos col-lg-6 col-sm-12">
+              <img src="../images/organiser-un-concert-en-7-etapes.jpg" alt="imagen1">
+              <img src="../images/pexels-josh-sorenson-154147.jpg" alt="imagen2">
+              <img src="../images/pexels-wendy-wei-1805895.jpg" alt="imagen3">
+              <img src="../images/pexels-dom-gould-325811.jpg" alt="imagen4">
+        </div> 
       </div>
-    </section>  
+    
+
+
+    </div>  
+
+
+
     </main>
+
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-4 col-md-6 col-sm-12 creditos">
             <p class="text-left">
               Página sin fines de lucro ni comerciales. Trabajo practico para desarrollo web. Tirroma no existe.<br>
               © 2023 Ayelén Anca
             </p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 redes">
+            <div class="col-lg-4 col-sm-12"><p class="tirroma2">TIRROMA</p></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 redes">
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="https://twitter.com/">
@@ -145,5 +149,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -7,103 +7,126 @@
   box-sizing: border-box;
 }
 
-body {
-  @include font-styles;
-  margin: 0;
-  padding: 0;
-  background-color: $color-fondo;
-  overflow-x: hidden;
 
-  header {
-    background-color: $color-fondo;
+  body {
+    @include font-styles;
     margin: 0;
     padding: 0;
-    .navegador {
+    background-color: $color-fondo;
+ overflow-x: hidden;
+  
+    header {
+      background-color: $color-fondo;
       margin: 0;
       padding: 0;
-      background-color: $color-fondo;
-      .logo_banda {
-        height: 80px;
-      }
-      nav ul {
+      .navegador {
+        margin: 0;
+        padding: 0;
         background-color: $color-fondo;
-        margin-right: 30px;
+        .logo_banda {
+          height: 80px;
+        }
 
-        li {
-          margin: 5px;
-          a {
-            text-decoration: none;
-            justify-content: center;
-            padding: 7px 10px;
+        nav ul {
+          background-color: $color-fondo;
+          li {
+            margin: 5px;
+            a {
+              text-decoration: none;
+              justify-content: center;
+              padding: 7px 10px 7px 10px;
+            }
           }
         }
       }
+      .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn {
+        background-color: #6e0b0b;
+        border-radius: 5.6rem;
+        border-color: #6e0b0b;
+        text-align: center;
+        color: #efd065;
+        font-family: "Gotu";
+        font-style: normal;
+        font-weight: 400;
+        width: 110px;
+        margin: 10px ;
+      }
+      .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn:hover {
+        background-color: #efd065;
+        color: #6e0b0b;
+      }
     }
-    .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn {
-      background-color: #6e0b0b;
-      border-radius: 5.6rem;
-      border-color: #6e0b0b;
-      text-align: center;
-      color: #efd065;
-      font-family: "Gotu";
-      font-style: normal;
-      font-weight: 400;
-      width: 110px;
-      margin: 10px;
+    main {
+      margin: 0;
+      padding: 0;
+  
+      .titulo {
+        padding: 1rem;
+        margin: 1rem;
+        width: 296px;
+        @include font("Germania One", normal, 400, 3.5rem, 7rem);
+        color: $color-texto-principal;
+      }
     }
-    .navbar .navbar-nav .nav-item .nav-link.active.navegador__btn:hover {
-      background-color: #efd065;
-      color: #6e0b0b;
-    }
-  }
-  main {
-    margin: 0;
-    padding: 0;
-
-    .titulo {
-      padding: 1rem;
-      margin: 1rem;
-      width: 296px;
-      @include font("Germania One", normal, 400, 3.5rem, 7rem);
-      color: $color-texto-principal;
-    }
-
-    .section4 {
+    footer {
+      background-color: rgb(26, 25, 25);
+      padding: 10px 10px 3px 10px;
+      margin: 50px 0 0 0;
+      .creditos {
+        display: flex;
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        align-items: center;
+      }
       .tirroma2 {
-        @include font("Germania One", normal, 400, 7rem, 8rem);
+        @include font("Germania One", normal, 400, 4rem, 7rem);
         color: $color-secundario;
         display: flex;
+        align-items: center;
         justify-content: center;
-        margin: 5px 10px 10px 10px;
-        padding: 5px 10px 10px 10px;
+        margin: 0 10px 0 10px;
+        padding: 0 10px 0 10px;
       }
       @media screen and (max-width: 764px) {
         .tirroma2 {
           font-size: 3rem;
         }
       }
-    }
-  }
-
-  footer {
-    background-color: rgba(172, 170, 175, 0.5);
-    padding: 10px 10px 0 10px;
-    margin: 0;
-    .creditos {
-      display: flex;
-      justify-content: start;
-    }
-    .redes {
-      display: flex;
-      justify-content: end;
-    }
-    @media screen and (max-width: 764px) {
-      .creditos {
-        justify-content: center;
-      }
       .redes {
+        display: flex;
         justify-content: center;
+        align-items: center;
+        ul {
+          li {
+            margin: 5px;
+            a {
+              justify-content: center;
+              padding: 7px 10px;
+            img {
+             height: 50px;
+             width: 50px;
+            }
+            }
+          }
+        }
       }
+      @media screen and (max-width: 764px) {
+        .creditos {
+          justify-content: center;
+        }
+        .redes {
+          justify-content: center;
+        }
+      }
+      
     }
   }
-}
+  @media screen and (max-width: 764px) {
+    nav ul {
+      background-color: $color-secundario;
+      border: $color-secundario;
+      display: flex;
+      align-items: center;
+    }
+  }
