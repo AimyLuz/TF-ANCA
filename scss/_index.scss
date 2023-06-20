@@ -3,9 +3,9 @@
 body {
   .floating-image {
     position: fixed;
-    bottom: 130px; 
-    right: 30px; 
-    z-index: 9999; 
+    bottom: 130px;
+    right: 30px;
+    z-index: 9999;
     img {
       width: 200px;
     }
@@ -46,8 +46,8 @@ body {
           h3 {
             @include font ("Germania One", normal, 400, 4.5rem, 74px );
             color: $color-texto-principal;
-            padding: 2rem 2rem 1rem 2rem;
-            margin: 2rem 2rem 1rem 2rem;
+            padding: 2rem 2rem 1rem 0.5rem;
+            margin: 2rem 2rem 1rem 0.5rem;
             text-align: center;
           }
         }
@@ -60,7 +60,6 @@ body {
         .fechas__h4 {
           @include font ("Gilda Display", normal, 700, 1.4rem, 3rem );
           padding: 0.5rem;
-          margin: 0.5rem;
         }
         .fechas__lugar {
           @include font ("Gilda Display", normal, 700, 1rem, 2rem );
@@ -83,11 +82,9 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          align-items: center;
-          width: 224px;
           height: 291px;
           border: 1px solid $color-texto-secundario;
-          border-radius: 50px;
+          border-radius: 20px;
           background: $color-texto-secundario;
           padding: 5px;
           margin: 5px;
@@ -103,12 +100,10 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          align-items: center;
-          width: 224px;
           height: 291px;
           background: $color-secundario;
           border: 1px solid rgb(0, 0, 0);
-          border-radius: 50px;
+          border-radius: 20px;
           box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.507);
           color: $color-texto-secundario;
           font-size: 62.5%;
