@@ -44,7 +44,7 @@ main {
     @media screen and (max-width: 764px) {
       .btn {
         width: 130px;
-        height: 20px;
+        height: 50px;
         font-size: 1.3rem;
       }
     }
@@ -60,6 +60,9 @@ justify-content: center;
       &:hover {
         opacity: 0.8;
       }
+    }
+    @media screen and (max-width: 764px) {
+      display: none;
     }
   }
 }

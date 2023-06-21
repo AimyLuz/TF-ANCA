@@ -25,8 +25,11 @@
     }
   }
   @media screen and (max-width: 764px) {
-    .tapas {
-      width: 5rem;
+    table {
+      font-weight: 400;
+      .tapas {
+        width: 5rem;
+      }
     }
     table {
       font-size: 0.8rem;

@@ -46,8 +46,8 @@ body {
           h3 {
             @include font ("Germania One", normal, 400, 4.5rem, 74px );
             color: $color-texto-principal;
-            padding: 2rem 2rem 1rem 0.5rem;
-            margin: 2rem 2rem 1rem 0.5rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
             text-align: center;
           }
         }
