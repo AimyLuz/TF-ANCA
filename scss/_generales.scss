@@ -103,8 +103,8 @@
               justify-content: center;
               padding: 7px 10px;
             img {
-             height: 50px;
-             width: 50px;
+            height: 50px;
+            width: 50px;
             }
             }
           }
@@ -127,26 +127,5 @@
       border: $color-secundario;
       display: flex;
       align-items: center;
-    }
-    .error404 {
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 50px;
-      }
-  
-      h1 {
-        font-size: 36px;
-      }
-  
-      p {
-        font-size: 18px;
-        margin-bottom: 20px;
-      }
-  
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
     }
   }

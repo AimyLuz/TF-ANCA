@@ -145,22 +145,6 @@ body footer .redes ul li a img {
     display: flex;
     align-items: center;
   }
-  .error404 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-  }
-  .error404 h1 {
-    font-size: 36px;
-  }
-  .error404 p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .error404 a {
-    color: #007bff;
-    text-decoration: none;
-  }
 }
 /* INDEX */
 body .floating-image {
