@@ -10,16 +10,16 @@ body {
           img {
             width: 80%;
             border-radius: 100%;
-            padding: 2rem;
-            margin: 2rem;
+            padding: 0 1rem 1rem 1rem;
+            margin:  0.14rem 1rem 1rem 1rem;
             &:hover {
               opacity: 0.8;
             }
           }
           p {
-            padding: 1rem 2rem 1rem 2rem;
-            margin: 1rem 2rem 1.2rem 2rem;
-            @include font("Gothic A1", normal, 700, 2rem, 3rem);
+            padding: 1rem;
+            margin: 1rem;
+            @include font("Gothic A1", normal, 700, 1.9rem, 3rem);
             text-align: justify;
             color: $color-texto-secundario;
             &:hover {
